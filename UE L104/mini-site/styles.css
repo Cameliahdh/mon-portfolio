@@ -1,0 +1,264 @@
+
+@import url("https://fonts.googleapis.com/css?family=Rajdhani+Semi-bold&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Avenir&display=swap");
+
+* {
+    margin: 0;
+}
+
+/* MENU DE NAVIGATION */
+
+nav {
+    width: 100%;
+    overflow: auto;
+    background: #EA1C3F;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 250px;
+
+}
+
+nav > ul {
+    padding: 10px;
+    margin: 0 0 0 575px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+li a {
+    width: 100px;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Rajdhani;
+    font-size: 150%;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+/* Présence active sur une page */
+#article_index {
+    text-decoration: underline;
+    color: black;
+}
+
+#article_stage {
+    text-decoration: underline;
+    color: black;
+}
+
+#article_actualité {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+
+
+/* TEXTE */
+
+h1:not(.menu_de_navigation) {
+    color: #EA1C3F;
+    font-family: Rajdhani;
+    font-size: 220%;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-family: Rajdhani, sans-serif;
+    font-size: 170%;
+    text-align: center;
+}
+
+h3 {
+    color: #6E6E6E;
+    font-family: Rajdhani, sans-serif;
+    font-size: 130%;
+    margin-left: 2em;
+    font-weight: 200%;
+}
+
+
+section > p, section li {
+    color: #282828;
+    font-family: Avenir;
+    text-align: justify;
+    margin-left: 3em;
+    margin-right: 4em;
+    line-height: 160%;
+    /* police changée, pas la même que le word */
+}
+
+
+h1::selection {
+    background-color: black;
+}
+h2::selection, h3::selection, p::selection, li::selection {
+    background-color:#000000;
+    color: #FFFFFF;
+}
+
+a::selection {
+    background-color: black;
+    color: lightcoral;
+}
+
+a:not(.item_nav,.haut_de_page) {
+    color: #EA1C3F;
+    font-family: Avenir;
+    text-decoration: none ;
+    font-style: italic;
+}
+
+a:hover:not(.item_nav) {
+    text-decoration: underline;
+
+}
+
+a:active:not(.item_nav) {
+    color:lightcoral;
+}
+
+
+
+
+
+hr {
+    border: 1px solid black;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer:not(p) {
+    font-family: Avenir;
+    text-align: center;
+    background: #222222;
+}
+
+footer > p, a, td {
+    color: #FFFFFF;
+}
+
+footer > p {
+    font-family: Avenir;
+    text-align: left;
+    margin-left: 2em;
+    background: #222222;
+}
+
+td::selection {
+    background-color: black;
+}
+
+th::selection {
+    background-color: black;
+}
+
+table {
+    table-layout:fixed;
+    text-align: center;
+    margin: auto;
+    border-collapse:separate;
+}
+
+td {
+    padding: 1%;
+    width: 5%;
+    text-align: center;
+    font-style:italic ;
+
+
+}
+th {
+    padding: 1%;
+    width: 5%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #EA1C3F;
+    font-weight: bold;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+th > img {
+    margin-left: 10px;
+    margin-top: -15%;
+    margin-bottom: -20px;
+}
+
+.haut_de_page {
+    color: #FFFFFF;
+    background-color:#EA1C3F;
+    border: 2px solid;
+    border-color:#FFFFFF;
+    font-family: Rajdhani;
+    font-weight: bold;
+    float: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: initial;
+    padding: 10px;
+    margin-right: 5%;
+    margin-top: -2%;
+}
+
+
+
+
+
+/* ELEMENTS VISUELS */
+
+
+/* page index */
+
+.photo-index {
+    float: right;
+    margin-right: 5em;
+    margin-top: -35%;
+}
+
+.vidéo1 {
+    margin-left: 30%;
+}
+
+/* page stage */
+
+.photo-stage {
+    margin-left: 30%;
+
+}
+
+/* page actualité */
+
+.photo-actualité {
+    margin-left: 22%
+}
+
+.vidéo2 {
+    margin-left: 30%;
+}
